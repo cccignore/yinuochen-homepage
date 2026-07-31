@@ -35,11 +35,7 @@
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.experience %}
                                 <li class="media experience-item mb-2">
-                                    {% if item.logo_crop == "byfusion" %}
-                                    <span class="experience-logo-crop experience-logo-crop-byfusion mr-2 mt-1">
-                                        <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
-                                    </span>
-                                    {% elsif item.logo %}
+                                    {% if item.logo %}
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="experience-logo mr-2 mt-1">
                                     {% else %}
                                     <span class="experience-logo-placeholder mr-2 mt-1" aria-hidden="true"><i class="fas fa-building"></i></span>

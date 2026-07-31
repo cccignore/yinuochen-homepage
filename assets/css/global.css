@@ -154,25 +154,6 @@ div.lazy {
     justify-content: center;
 }
 
-.experience-logo-crop {
-    display: inline-block;
-    flex: 0 0 auto;
-    height: 20px;
-    overflow: hidden;
-    position: relative;
-    width: 20px;
-}
-
-.experience-logo-crop-byfusion img {
-    height: auto;
-    left: 50%;
-    max-width: none;
-    position: absolute;
-    top: -6px;
-    transform: translateX(-50%);
-    width: 85px;
-}
-
 .experience-item:last-child {
     margin-bottom: 0 !important;
 }
