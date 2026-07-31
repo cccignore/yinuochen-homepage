@@ -31,39 +31,6 @@
     - Reached 89% execution success after repair and intercepted 93% of high-risk or invalid requests in offline evaluation.
   tags: [ReAct, NL2SQL, Agent Safety, SQL, Enterprise AI]
 
-- title: Multimodal AI Safety Evaluation
-  slug: multimodal-ai-safety
-  featured: true
-  organization: HKUST(GZ) AI Lab
-  role: Research Assistant
-  period: Jul. 2025 - Mar. 2026
-  cover: /assets/images/projects/multimodal-ai-safety.png
-  summary: >-
-    A responsible evaluation framework for studying how safety-relevant intent
-    can be distributed across video frames and contextual text cues.
-  highlights:
-    - Proposed a three-stage evaluation pipeline from intent decomposition to controlled video generation and robustness testing.
-    - Built a benchmark spanning 8 risk categories and automated the evaluation of 6 mainstream multimodal models.
-    - Completed the experimental validation and independently led the research write-up.
-  tags: [Multimodal LLM, AI Safety, Evaluation, T2I / I2V]
-
-- title: Embodied AI in Isaac Lab
-  slug: embodied-ai
-  featured: true
-  organization: Independent Research Project
-  role: Developer & Researcher
-  period: Jan. 2026 - Present
-  cover: /assets/images/projects/embodied-ai.png
-  summary: >-
-    GPU-parallel simulation experiments for robotic manipulation, quadruped
-    locomotion, and humanoid control, with an emphasis on reward design and
-    physically reliable behavior.
-  highlights:
-    - Configured Isaac Lab environments and trained policies with PPO and SAC.
-    - Designed multi-objective rewards for task progress, stability, energy, smoothness, and contact quality.
-    - Achieved 87% robotic-arm grasping success and stable quadruped walking for more than 120 seconds on complex terrain.
-  tags: [Embodied AI, Isaac Lab, Reinforcement Learning, PPO, SAC]
-
 - title: Physical Intelligent Systems
   slug: physical-intelligence
   featured: false
