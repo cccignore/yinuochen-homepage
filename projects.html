@@ -1,0 +1,21 @@
+---
+layout: default
+title: Projects
+navbar_title: Projects
+---
+
+<div class="row justify-content-center">
+    <div class="col-12 col-xl-10">
+        <header class="projects-page-header mb-4">
+            <p class="text-uppercase small font-weight-bold text-primary mb-2">Selected work</p>
+            <h1 class="mb-3">Projects & Research</h1>
+            <p class="lead text-muted mb-0">
+                My work explores how intelligent systems can be more capable,
+                controllable, and trustworthy - from multimodal generation and
+                enterprise agents to safety evaluation and embodied learning.
+            </p>
+        </header>
+
+        {% include widgets/project_card.html projects=site.data.projects %}
+    </div>
+</div>

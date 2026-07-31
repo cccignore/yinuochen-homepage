@@ -91,3 +91,80 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.profile-portrait {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 0.75rem;
+}
+
+.profile-portrait-mobile {
+    width: min(180px, 50%);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.project-item {
+    transition: background-color 160ms ease;
+}
+
+.project-item:hover {
+    background-color: #f8fbfd;
+}
+
+.project-cover {
+    width: 100%;
+    height: 100%;
+    min-height: 170px;
+    max-height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-meta {
+    color: #087f8c;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+}
+
+.project-highlights li {
+    margin-bottom: 0.25rem;
+}
+
+.project-tags,
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.project-tags span,
+.skill-tags span {
+    display: inline-block;
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    background: #eef6f7;
+    color: #28636a;
+    font-size: 0.75rem;
+    line-height: 1.25;
+}
+
+.projects-page-header {
+    padding: 2rem 0 0.25rem;
+}
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 4.5rem;
+    }
+
+    .project-cover {
+        max-height: none;
+    }
+}

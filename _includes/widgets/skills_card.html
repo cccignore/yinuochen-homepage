@@ -1,0 +1,15 @@
+<section class="my-3 bg-white shadow-sm rounded-xl" aria-labelledby="skills-heading">
+    <h6 id="skills-heading" class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-code"></i> Skills</h6>
+    <div class="p-3">
+        <div class="row">
+            {% for group in site.data.skills %}
+            <div class="col-lg-6 mb-3 {% if forloop.last or forloop.rindex == 2 %}mb-lg-0{% endif %}">
+                <div class="small font-weight-bold mb-2">{{ group.category }}</div>
+                <div class="skill-tags">
+                    {% for item in group.items %}<span>{{ item }}</span>{% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

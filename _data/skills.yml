@@ -1,0 +1,40 @@
+- category: AI & Agents
+  items:
+    - PyTorch
+    - Transformers
+    - LangChain
+    - RAG
+    - ReAct Agents
+    - LLM/VLM APIs
+    - Prompt & Workflow Design
+
+- category: Robotics & Simulation
+  items:
+    - Reinforcement Learning
+    - PPO / SAC
+    - NVIDIA Isaac Sim
+    - Isaac Lab
+    - Gazebo
+    - Multi-Agent Coordination
+
+- category: Engineering
+  items:
+    - Python
+    - TypeScript
+    - JavaScript
+    - SQL
+    - C
+    - Java
+    - FastAPI
+    - NestJS
+    - Next.js
+    - React
+
+- category: Systems & Data
+  items:
+    - Docker
+    - Kubernetes
+    - Prisma
+    - MongoDB
+    - Redis
+    - SQLite

@@ -1,0 +1,94 @@
+- title: AI Short Drama Production Platform
+  slug: ai-short-drama
+  featured: true
+  organization: HKUST(GZ) PhD Startup Team
+  role: Algorithm & Application Development
+  period: Apr. 2026 - Present
+  cover: /assets/images/projects/ai-short-drama.png
+  summary: >-
+    A production-grade human-AI workflow that turns a creator brief into
+    structured storyboards, reusable visual assets, and controllable video clips.
+  highlights:
+    - Built a Next.js, TypeScript, Prisma, and SQLite application around an asynchronous multi-stage AI pipeline.
+    - Added deterministic episode slicing, crash-recovery journaling, classified retries, and structured reference binding for cross-shot consistency.
+    - Produced 500+ video clips and reduced time-to-first-cut from days to about 30 minutes per episode.
+  tags: [AI Agents, Multimodal Generation, Next.js, TypeScript, Prisma]
+
+- title: Trustworthy Data Analyst Agent
+  slug: data-analyst-agent
+  featured: true
+  organization: ByteDance Lark AI Product Innovation Competition
+  role: Core Member
+  period: 2026
+  cover: /assets/images/projects/data-analyst-agent.png
+  summary: >-
+    An auditable NL2SQL agent for enterprise data warehouses, designed to expose
+    evidence, uncertainty, safety checks, and repair traces instead of returning
+    opaque answers.
+  highlights:
+    - Designed a ReAct pipeline covering intent parsing, metadata retrieval, SQL generation, safety checks, sandbox execution, and auto-repair.
+    - Led the metadata-first strategy, SQL risk scoring, and Evidence Pack module.
+    - Reached 89% execution success after repair and intercepted 93% of high-risk or invalid requests in offline evaluation.
+  tags: [ReAct, NL2SQL, Agent Safety, SQL, Enterprise AI]
+
+- title: Multimodal AI Safety Evaluation
+  slug: multimodal-ai-safety
+  featured: true
+  organization: HKUST(GZ) AI Lab
+  role: Research Assistant
+  period: Jul. 2025 - Mar. 2026
+  cover: /assets/images/projects/multimodal-ai-safety.png
+  summary: >-
+    A responsible evaluation framework for studying how safety-relevant intent
+    can be distributed across video frames and contextual text cues.
+  highlights:
+    - Proposed a three-stage evaluation pipeline from intent decomposition to controlled video generation and robustness testing.
+    - Built a benchmark spanning 8 risk categories and automated the evaluation of 6 mainstream multimodal models.
+    - Completed the experimental validation and independently led the research write-up.
+  tags: [Multimodal LLM, AI Safety, Evaluation, T2I / I2V]
+
+- title: Embodied AI in Isaac Lab
+  slug: embodied-ai
+  featured: true
+  organization: Independent Research Project
+  role: Developer & Researcher
+  period: Jan. 2026 - Present
+  cover: /assets/images/projects/embodied-ai.png
+  summary: >-
+    GPU-parallel simulation experiments for robotic manipulation, quadruped
+    locomotion, and humanoid control, with an emphasis on reward design and
+    physically reliable behavior.
+  highlights:
+    - Configured Isaac Lab environments and trained policies with PPO and SAC.
+    - Designed multi-objective rewards for task progress, stability, energy, smoothness, and contact quality.
+    - Achieved 87% robotic-arm grasping success and stable quadruped walking for more than 120 seconds on complex terrain.
+  tags: [Embodied AI, Isaac Lab, Reinforcement Learning, PPO, SAC]
+
+- title: Physical Intelligent Systems
+  slug: physical-intelligence
+  featured: false
+  organization: HKUST(GZ)
+  role: Research Assistant
+  period: 2026 - Present
+  summary: >-
+    Research on multi-arm collaboration and long-horizon mobile manipulation,
+    including task allocation, motion synchronization, continual adaptation,
+    and recovery from coordination failures.
+  highlights:
+    - Developing cooperative task suites and evaluation protocols for contact-rich manipulation.
+    - Studying continual learning and reliable long-horizon coordination under partial observability.
+  tags: [Physical Intelligence, Multi-Robot Systems, Continual Learning]
+
+- title: Multimodal Emotion Understanding
+  slug: multimodal-emotion
+  featured: false
+  organization: Shenzhen Guangming Laboratory
+  role: Research Assistant
+  period: Mar. 2025 - Jun. 2025
+  summary: >-
+    Multimodal affect understanding across video, audio, and text using a
+    Transformer-based fusion baseline and carefully designed annotation protocols.
+  highlights:
+    - Built data-cleaning and labeling workflows and analyzed cross-modal failure patterns.
+    - Improved F1 by 6 percentage points over text-only baselines and raised inter-annotator agreement to 0.82 Kappa.
+  tags: [Multimodal Learning, Emotion Understanding, Data Curation]

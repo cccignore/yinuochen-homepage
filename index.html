@@ -1,6 +1,6 @@
 ---
 layout: default
-title : Homepage
+title: Home
 navbar_title: Home
 ---
 
@@ -12,10 +12,6 @@ navbar_title: Home
 
         {% include widgets/profile_card_bio_only.html %}
 
-        <!-- Debugging widgets -->
-        {% include widgets/debug_repo_name.html %}
-        {% include widgets/debug_url.html %}
-
         {% if site.data.display.homepage.show_experience %}
             {% include widgets/experience_card.html %}
         {% endif %}
@@ -25,6 +21,14 @@ navbar_title: Home
         {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
         {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_projects %}
+            {% include widgets/project_card.html projects=site.data.projects limit=site.data.display.homepage.num_projects featured_only=true %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_skills %}
+            {% include widgets/skills_card.html %}
         {% endif %}
 
         {% if site.data.display.homepage.show_selected_publications %}
