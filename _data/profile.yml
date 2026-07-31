@@ -3,7 +3,10 @@ secondary_name: "陈一诺"
 navbar_name: "Yinuo Chen"
 
 positions:
-  - name: Undergraduate at South China University of Technology
+  - logo: /assets/images/badges/SCUT.png
+    name: Undergraduate at South China University of Technology
+  - logo: /assets/images/badges/HKUST.webp
+    name: Research Assistant at HKUST(GZ)
   - name: AI Agents, Multimodal Intelligence & Embodied AI
 
 email: "yinuochen13@gmail.com"
@@ -28,6 +31,7 @@ portrait_caption: Yinuo Chen
 
 education:
   - name: South China University of Technology
+    logo: /assets/images/badges/SCUT.png
     dept: "GPA: 3.55 / 4.0 (85.12 / 100)"
     position: >-
       B.M. in Big Data Management and Application<br/>
@@ -36,13 +40,16 @@ education:
 
 experience:
   - name: HKUST(GZ) PhD Startup Team
+    logo: /assets/images/badges/HKUST.webp
     position: Algorithm & Application Development
     date: Apr. 2026 - Present
   - name: HKUST(GZ)
+    logo: /assets/images/badges/HKUST.webp
     dept: Physical Intelligent Systems
     position: Research Assistant
     date: 2026 - Present
   - name: HKUST(GZ) AI Lab
+    logo: /assets/images/badges/HKUST.webp
     position: Research Assistant
     date: Jul. 2025 - Mar. 2026
   - name: Shenzhen Guangming Laboratory

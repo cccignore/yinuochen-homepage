@@ -1,0 +1,93 @@
+<div class="row mt-3 align-items-stretch github-scholar-grid">
+    <div class="col-12 col-lg-7 mb-3 mb-lg-0 d-flex">
+        <section class="github-contributions card border-0 shadow-sm bg-white w-100">
+            <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between">
+                    <div>
+                        <h5 class="mb-1">GitHub Activity</h5>
+                        <p class="small text-muted mb-0">Contribution calendar · last 8 months</p>
+                    </div>
+                    <a class="activity-card-mark activity-card-mark-github" href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener" aria-label="Open {{ site.data.profile.primary_name }} on GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="github-contributions-chart mt-4">
+                    <img
+                        src="{{ '/assets/images/github-contributions.svg' | relative_url }}"
+                        alt="GitHub contribution calendar for {{ site.data.profile.github }}"
+                        width="447"
+                        height="104"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async">
+                </div>
+                <div class="github-contributions-footer d-flex justify-content-between align-items-center mt-auto pt-3 small text-muted">
+                    <span>Updated {{ site.data.github_contributions.fetched_at | date: "%b %-d, %Y" }}</span>
+                    <span class="github-contributions-legend" aria-label="Contribution intensity legend">
+                        <span>Less</span>
+                        <i class="github-legend-swatch github-legend-swatch-0"></i>
+                        <i class="github-legend-swatch github-legend-swatch-1"></i>
+                        <i class="github-legend-swatch github-legend-swatch-2"></i>
+                        <i class="github-legend-swatch github-legend-swatch-3"></i>
+                        <i class="github-legend-swatch github-legend-swatch-4"></i>
+                        <span>More</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-lg-5 d-flex">
+        <section class="google-scholar card border-0 shadow-sm bg-white w-100">
+            <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between">
+                    <div>
+                        <h5 class="mb-1">Google Scholar</h5>
+                        <p class="small text-muted mb-0">Research impact at a glance</p>
+                    </div>
+                    {% if site.data.profile.gscholar %}
+                    {%- if site.data.profile.gscholar contains 'scholar.google' -%}
+                    {%- assign gscholar_url = site.data.profile.gscholar -%}
+                    {%- else -%}
+                    {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+                    {%- endif -%}
+                    <a class="activity-card-mark activity-card-mark-scholar" href="{{ gscholar_url }}" target="_blank" rel="noopener" aria-label="Open Google Scholar profile"><i class="ai ai-google-scholar"></i></a>
+                    {% else %}
+                    <span class="activity-card-mark activity-card-mark-scholar" aria-hidden="true"><i class="ai ai-google-scholar"></i></span>
+                    {% endif %}
+                </div>
+
+                {% if site.data.profile.gscholar and site.data.google_scholar %}
+                <div class="google-scholar-stats row no-gutters mt-4">
+                    <div class="col-4 pr-2">
+                        <div class="google-scholar-stat">
+                            <span class="google-scholar-stat-value">{{ site.data.google_scholar.citations }}</span>
+                            <span class="google-scholar-stat-label">Citations</span>
+                        </div>
+                    </div>
+                    <div class="col-4 px-1">
+                        <div class="google-scholar-stat">
+                            <span class="google-scholar-stat-value">{{ site.data.google_scholar.h_index }}</span>
+                            <span class="google-scholar-stat-label">h-index</span>
+                        </div>
+                    </div>
+                    <div class="col-4 pl-2">
+                        <div class="google-scholar-stat">
+                            <span class="google-scholar-stat-value">{{ site.data.google_scholar.i10_index }}</span>
+                            <span class="google-scholar-stat-label">i10-index</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="google-scholar-meta mt-auto pt-4 d-flex align-items-end">
+                    <span class="small text-muted">{{ site.data.google_scholar.articles }} publications · Updated {{ site.data.google_scholar.fetched_at | date: "%b %-d, %Y" }}</span>
+                </div>
+                {% else %}
+                <div class="scholar-empty-state mt-4">
+                    <span class="scholar-status"><i class="fas fa-link mr-2"></i>Profile not linked yet</span>
+                    <p class="small text-muted mb-0 mt-3">Citation metrics will appear here after a Google Scholar profile ID is added.</p>
+                </div>
+                <div class="google-scholar-meta mt-auto pt-3">
+                    <span class="small text-muted">Ready for automatic daily updates</span>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+</div>

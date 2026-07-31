@@ -2,7 +2,7 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    padding-top: 5.0rem;
+    padding-top: 5.5rem;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -43,9 +43,39 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.94) !important;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+}
+
+.school-marks {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.7rem;
+    margin-right: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.school-mark {
+    display: block;
+    object-fit: contain;
+}
+
+.school-mark-scut {
+    height: 42px;
+    width: 42px;
+}
+
+.school-mark-hkust {
+    height: 39px;
+    width: auto;
+}
+
+.school-mark-divider {
+    background: #e3e8ee;
+    height: 28px;
+    width: 1px;
 }
 
 .inline-badge {
@@ -90,6 +120,145 @@ div.lazy {
 
 .email-text {
     font-family: Source Code Pro, monospace;
+}
+
+.profile-portrait-main {
+    height: 200px;
+    object-fit: cover;
+    object-position: center 35%;
+    width: 200px;
+}
+
+.profile-portrait-compact {
+    height: 48px;
+    object-fit: cover;
+    object-position: center 35%;
+    width: 48px;
+}
+
+.experience-logo,
+.experience-logo-placeholder {
+    flex: 0 0 auto;
+    height: 20px;
+    object-fit: contain;
+    width: 20px;
+}
+
+.experience-logo-placeholder {
+    align-items: center;
+    background: #eef2f7;
+    border-radius: 50%;
+    color: #6c757d;
+    display: inline-flex;
+    font-size: 0.62rem;
+    justify-content: center;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.github-contributions-chart {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-color: #9fc5f1 transparent;
+}
+
+.github-contributions-chart img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: none;
+    width: auto;
+}
+
+.activity-card-mark {
+    align-items: center;
+    background: #eef2f7;
+    border-radius: 50%;
+    display: inline-flex;
+    flex: 0 0 auto;
+    height: 2.25rem;
+    justify-content: center;
+    margin-left: 1rem;
+    text-decoration: none !important;
+    width: 2.25rem;
+}
+
+.activity-card-mark-github {
+    color: #1468b7;
+}
+
+.activity-card-mark-scholar {
+    color: #087feb;
+}
+
+a.activity-card-mark:hover {
+    background: #e1ebf6;
+    color: #0f579a;
+}
+
+.github-contributions-footer,
+.google-scholar-meta {
+    border-top: 1px solid #eef2f7;
+}
+
+.github-contributions-legend {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.2rem;
+    white-space: nowrap;
+}
+
+.github-legend-swatch {
+    border-radius: 2px;
+    display: inline-block;
+    height: 0.65rem;
+    width: 0.65rem;
+}
+
+.github-legend-swatch-0 { background: #eef2f7; }
+.github-legend-swatch-1 { background: #dcecff; }
+.github-legend-swatch-2 { background: #9fc5f1; }
+.github-legend-swatch-3 { background: #5b96da; }
+.github-legend-swatch-4 { background: #1468b7; }
+
+.google-scholar-stat {
+    background: #f7f9fc;
+    border: 1px solid #eef2f7;
+    border-radius: 0.65rem;
+    min-height: 5.5rem;
+    padding: 0.85rem 0.6rem;
+    text-align: center;
+}
+
+.google-scholar-stat-value {
+    color: #1468b7;
+    display: block;
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.google-scholar-stat-label {
+    color: #6c757d;
+    display: block;
+    font-size: 0.72rem;
+    margin-top: 0.35rem;
+}
+
+.scholar-empty-state {
+    background: #f7f9fc;
+    border: 1px dashed #c9d7e5;
+    border-radius: 0.65rem;
+    min-height: 8.1rem;
+    padding: 1.15rem;
+}
+
+.scholar-status {
+    color: #1468b7;
+    font-weight: 700;
 }
 
 .profile-portrait {
@@ -161,10 +330,63 @@ div.lazy {
 
 @media (max-width: 767.98px) {
     body {
-        padding-top: 4.5rem;
+        padding-top: 5rem;
     }
 
     .project-cover {
         max-height: none;
+    }
+
+    .github-contributions-chart img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .github-contributions-footer,
+    .google-scholar-meta {
+        align-items: flex-start !important;
+        flex-direction: column;
+        gap: 0.65rem;
+    }
+
+    .experience-grid > div + div {
+        margin-top: 1.25rem;
+    }
+
+    .experience-detail {
+        display: block !important;
+    }
+
+    .experience-detail .ml-auto {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .school-marks {
+        gap: 0.45rem;
+        max-width: calc(100% - 3.5rem);
+    }
+
+    .school-mark-scut {
+        height: 36px;
+        width: 36px;
+    }
+
+    .school-mark-hkust {
+        height: 31px;
+        max-width: 180px;
+    }
+
+    .school-mark-divider {
+        height: 24px;
+    }
+
+    .card-body.p-5 {
+        padding: 1.5rem !important;
+    }
+
+    .h1 {
+        font-size: 2rem;
     }
 }
