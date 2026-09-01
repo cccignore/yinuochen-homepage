@@ -118,6 +118,13 @@ div.lazy {
     font-size: 100%;
 }
 
+.publication-cover {
+    aspect-ratio: 2 / 1;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+    object-position: center;
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }
