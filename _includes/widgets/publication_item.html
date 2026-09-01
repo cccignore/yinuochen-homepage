@@ -1,7 +1,7 @@
 {% assign item = include.item %}
 <div class="d-none d-md-block">
-    <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+    <div class="row no-gutters align-items-center publication-desktop-row {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
+        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3 d-flex align-items-center justify-content-center publication-cover-column">
             {%- if item.cover -%}
             <img data-src="{{ item.cover | relative_url }}" alt="Pipeline for {{ item.title }}" class="lazy w-100 rounded-sm publication-cover" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             {%- else -%}

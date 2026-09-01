@@ -121,8 +121,15 @@ div.lazy {
 .publication-cover {
     aspect-ratio: 2 / 1;
     border: 1px solid rgba(0, 0, 0, 0.08);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
     object-position: center;
+}
+
+.publication-cover-column {
+    align-self: stretch;
 }
 
 .email-text {
@@ -163,6 +170,18 @@ div.lazy {
 
 .experience-item:last-child {
     margin-bottom: 0 !important;
+}
+
+.education-awards {
+    border-color: #eef2f7 !important;
+}
+
+.honors-list li {
+    margin-bottom: 0.35rem;
+}
+
+.honors-list li:last-child {
+    margin-bottom: 0;
 }
 
 .github-contributions-chart {
