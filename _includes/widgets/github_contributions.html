@@ -4,15 +4,15 @@
             <div class="card-body p-4 d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between">
                     <div>
-                        <h5 class="mb-1">GitHub Activity</h5>
-                        <p class="small text-muted mb-0">Contribution calendar · last 8 months</p>
+                        <h5 class="mb-1">GitHub Development Activity</h5>
+                        <p class="small text-muted mb-0">Commit calendar · public &amp; authorized private repositories</p>
                     </div>
                     <a class="activity-card-mark activity-card-mark-github" href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener" aria-label="Open {{ site.data.profile.primary_name }} on GitHub"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="github-contributions-chart mt-4">
                     <img
                         src="{{ '/assets/images/github-contributions.svg' | relative_url }}"
-                        alt="GitHub contribution calendar for {{ site.data.profile.github }}"
+                        alt="GitHub development activity calendar for {{ site.data.profile.github }}"
                         width="447"
                         height="104"
                         loading="eager"
@@ -20,7 +20,13 @@
                         decoding="async">
                 </div>
                 <div class="github-contributions-footer d-flex justify-content-between align-items-center mt-auto pt-3 small text-muted">
-                    <span>Updated {{ site.data.github_contributions.fetched_at | date: "%b %-d, %Y" }}</span>
+                    <span>
+                        Updated {{ site.data.github_contributions.fetched_at | date: "%b %-d, %Y" }}
+                        {% if site.data.github_contributions.total_commits %}
+                        · {{ site.data.github_contributions.total_commits }} commits
+                        · {{ site.data.github_contributions.active_days }} active days
+                        {% endif %}
+                    </span>
                     <span class="github-contributions-legend" aria-label="Contribution intensity legend">
                         <span>Less</span>
                         <i class="github-legend-swatch github-legend-swatch-0"></i>
