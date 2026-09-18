@@ -3,7 +3,7 @@ title:          "Action Response Is Not Factual Direction: A Prospective Audit o
 date:           2026-08-30 00:01:00 +0800
 selected:       true
 pub:            "IROS 2026 Workshop on Physical World Models for Scaling Embodied AI (PWMS)"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Accepted Workshop Paper</span>'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Accepted Workshop Paper</span> <span class="badge badge-pill badge-publication badge-primary">Oral</span>'
 abstract: >-
   ActionProbe audits whether action-conditioned robot video world models'
   branch response reflects factual direction, repeatability, and

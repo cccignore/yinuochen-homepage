@@ -10,9 +10,11 @@ abstract: >-
   case study, explicit buffer resets match fresh-process action outputs, while
   retained history changes them; the test assesses reset conformance rather than
   downstream task success.
+cover: /assets/images/publications/computational-handoff-pipeline.png
 authors:
   - Yinuo Chen
 links:
-  OpenReview: https://openreview.net/forum?id=Qlch6pZDo8
+  Paper: https://cccignore.github.io/yinuochen-homepage/assets/papers/computational-handoff.pdf
+  OpenReview: https://openreview.net/forum?id=QIch6pZDo8
   Workshop: https://chuchuchen.net/robotworker-26/
 ---
