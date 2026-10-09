@@ -13,7 +13,7 @@ cover:          /assets/images/publications/actionprobe-pipeline.png
 authors:
   - Yinuo Chen et al.
 links:
-  Paper: https://cccignore.github.io/yinuochen-homepage/assets/papers/action-response-not-factual-direction.pdf
+  Paper: https://yinuochen.com/assets/papers/action-response-not-factual-direction.pdf
   OpenReview: https://openreview.net/forum?id=ssQpL5dsv6
   Workshop: https://physical-world-models.github.io/IROS2026/
 ---

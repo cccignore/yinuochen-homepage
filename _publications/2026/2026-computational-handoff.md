@@ -14,7 +14,7 @@ cover: /assets/images/publications/computational-handoff-pipeline.png
 authors:
   - Yinuo Chen
 links:
-  Paper: https://cccignore.github.io/yinuochen-homepage/assets/papers/computational-handoff.pdf
+  Paper: https://yinuochen.com/assets/papers/computational-handoff.pdf
   OpenReview: https://openreview.net/forum?id=QIch6pZDo8
   Workshop: https://chuchuchen.net/robotworker-26/
 ---
