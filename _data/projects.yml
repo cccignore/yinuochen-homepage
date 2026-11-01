@@ -1,17 +1,19 @@
-- title: AI Short Drama Production Platform
+- title: AI Video Production Workflows
   slug: ai-short-drama
   featured: true
-  organization: HKUST(GZ) PhD Startup Team
-  role: Algorithm & Application Development
+  organization: ByFusion / LuckyShort
+  role: AI Application Development Intern
   period: Apr. 2026 - Present
-  cover: /assets/images/projects/ai-short-drama.png
+  cover: /assets/images/projects/eagles-character-interface.png
+  cover_caption: Product interface with generated example characters in a test project.
+  media_url: /assets/images/projects/eagles-feature-overview.png
+  media_label: View illustrated product walkthrough
   summary: >-
-    A production-grade human-AI workflow that turns a creator brief into
-    structured storyboards, reusable visual assets, and controllable video clips.
+    Contributed to an AI-assisted production platform connecting scripts,
+    storyboards, reusable character assets, and image/video generation.
   highlights:
-    - Built a Next.js, TypeScript, Prisma, and SQLite application around an asynchronous multi-stage AI pipeline.
-    - Added deterministic episode slicing, crash-recovery journaling, classified retries, and structured reference binding for cross-shot consistency.
-    - Produced 500+ video clips and reduced time-to-first-cut from days to about 30 minutes per episode.
+    - Worked on model orchestration, asynchronous tasks, retries, fallback handling, and recovery.
+    - Contributed to character and scene asset management, reference binding, and application delivery.
   tags: [AI Agents, Multimodal Generation, Next.js, TypeScript, Prisma]
 
 - title: Trustworthy Data Analyst Agent
@@ -27,24 +29,22 @@
     opaque answers.
   highlights:
     - Designed a ReAct pipeline covering intent parsing, metadata retrieval, SQL generation, safety checks, sandbox execution, and auto-repair.
-    - Led the metadata-first strategy, SQL risk scoring, and Evidence Pack module.
-    - Reached 89% execution success after repair and intercepted 93% of high-risk or invalid requests in offline evaluation.
+    - Contributed to metadata-grounded SQL generation, risk checks, and evidence and execution traces.
   tags: [ReAct, NL2SQL, Agent Safety, SQL, Enterprise AI]
 
-- title: Physical Intelligent Systems
+- title: Agentic Robotic Systems
   slug: physical-intelligence
   featured: false
-  organization: HKUST(GZ)
+  organization: PAIRS Lab, HKUST(GZ)
   role: Research Assistant
-  period: 2026 - Present
+  period: May 2026 - Present
   summary: >-
-    Research on multi-arm collaboration and long-horizon mobile manipulation,
-    including task allocation, motion synchronization, continual adaptation,
-    and recovery from coordination failures.
+    Research interests in robotic manipulation and long-horizon execution,
+    with a focus on model capabilities, system interfaces, and execution feedback.
   highlights:
-    - Developing cooperative task suites and evaluation protocols for contact-rich manipulation.
-    - Studying continual learning and reliable long-horizon coordination under partial observability.
-  tags: [Physical Intelligence, Multi-Robot Systems, Continual Learning]
+    - Exploring when robotic agents can reliably reuse prior skills and experience across tasks.
+    - Developing controlled evaluations of robot policies and world models.
+  tags: [Embodied AI, Agentic Robotics, Evaluation]
 
 - title: Multimodal Emotion Understanding
   slug: multimodal-emotion
@@ -57,5 +57,5 @@
     Transformer-based fusion baseline and carefully designed annotation protocols.
   highlights:
     - Built data-cleaning and labeling workflows and analyzed cross-modal failure patterns.
-    - Improved F1 by 6 percentage points over text-only baselines and raised inter-annotator agreement to 0.82 Kappa.
+    - Contributed to baseline experiments and annotation protocols across video, audio, and text.
   tags: [Multimodal Learning, Emotion Understanding, Data Curation]
