@@ -328,19 +328,6 @@ a.activity-card-mark:hover {
     text-transform: uppercase;
 }
 
-.project-cover-ui {
-    height: 240px;
-    min-height: 0;
-    max-height: 260px;
-    object-fit: contain;
-    background: #f7f8fa;
-}
-
-.experience-detail {
-    flex-wrap: wrap;
-    gap: 0.25rem 0.75rem;
-}
-
 .project-highlights li {
     margin-bottom: 0.25rem;
 }

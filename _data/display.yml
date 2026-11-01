@@ -1,11 +1,11 @@
 homepage:
   show_experience: true
   show_news: false
-  show_projects: true
+  show_projects: false
   show_skills: true
   show_selected_publications: true
   num_news: 4
-  num_projects: 1
+  num_projects: 4
 
 footer_text: >-
   <span>&copy; 2026 Yinuo Chen</span>

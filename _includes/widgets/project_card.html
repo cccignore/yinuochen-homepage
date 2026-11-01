@@ -16,8 +16,7 @@
         <div class="row no-gutters">
             {% if item.cover %}
             <div class="col-lg-4 pr-lg-3 mb-3 mb-lg-0">
-                <img src="{{ item.cover | relative_url }}" alt="Preview of {{ item.title }}" class="project-cover {% if item.cover_caption %}project-cover-ui{% endif %} rounded-lg" loading="lazy">
-                {% if item.cover_caption %}<p class="small text-muted mt-2 mb-0">{{ item.cover_caption }}</p>{% endif %}
+                <img src="{{ item.cover | relative_url }}" alt="Preview of {{ item.title }}" class="project-cover rounded-lg">
             </div>
             {% endif %}
             <div class="{% if item.cover %}col-lg-8{% else %}col-12{% endif %}">
@@ -35,7 +34,6 @@
                 <div class="project-tags" aria-label="Technologies and topics">
                     {% for tag in item.tags %}<span>{{ tag }}</span>{% endfor %}
                 </div>
-                {% if item.media_url %}<p class="small mt-3 mb-0"><a href="{{ item.media_url | relative_url }}" target="_blank" rel="noopener">{{ item.media_label | default: 'View project media' }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>{% endif %}
             </div>
         </div>
     </article>

@@ -3,30 +3,28 @@ secondary_name: "陈一诺"
 navbar_name: "Yinuo Chen"
 
 positions:
-  - logo: /assets/images/badges/HKUST.webp
-    name: Research Assistant at PAIRS Lab, HKUST(GZ)
   - logo: /assets/images/badges/SCUT.png
     name: Undergraduate at South China University of Technology
-  - name: Embodied AI & Agentic Robotics
+  - logo: /assets/images/badges/HKUST.webp
+    name: Research Assistant at HKUST(GZ)
+  - name: AI Agents, Multimodal Intelligence & Embodied AI
 
 email: "yinuochen13@gmail.com"
 github: cccignore
-linkedin: yinuo-chen-42372b385
 # gscholar: your_google_scholar_profile_id
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    My research interests focus on embodied AI and agentic robotic systems:
-    how models, tools, memory, and execution feedback support reliable robot
-    behavior. I am particularly interested in when skills and experience can
-    be reused across tasks.
+    I am an undergraduate at South China University of Technology, majoring in
+    Big Data Management and Application with a minor in Computer Science.
   </p>
   <p>
-    Alongside research, I develop AI applications and multimodal workflows,
-    including AI video production and LLM-powered information services.
-    My recent research examines robot video world models and policy state
-    at task boundaries, with two contributions accepted at IROS 2026 workshops.
+    My interests lie at the intersection of trustworthy AI agents, multimodal
+    intelligence, and embodied systems. I build end-to-end systems that turn
+    language and multimodal models into controllable, traceable workflows -
+    spanning creative generation, enterprise data analysis, AI safety
+    evaluation, and robot learning in simulation.
   </p>
 
 portrait_url: /assets/images/photos/yinuo-chen-portrait.png
@@ -36,28 +34,29 @@ education:
   - name: South China University of Technology
     logo: /assets/images/badges/SCUT.png
     position: >-
-      Bachelor of Management<br/>
-      Big Data Management &amp; Applications
-    date: Sep. 2023 - Jul. 2027 (expected)
+      B.M. in Big Data Management and Application<br/>
+      Minor in Computer Science
+    date: Sep. 2023 - Jul. 2027
 
 experience:
   - name: HKUST(GZ)
     logo: /assets/images/badges/HKUST.webp
-    dept: PAIRS Lab · Embodied AI & Agentic Robotics
+    dept: Embodied Intelligence & Physical Intelligent Systems
     position: Research Assistant
-    date: May 2026 - Present
-  - name: ByFusion / LuckyShort
+    date: 2026 - Present
+  - name: ByFusion
     logo: /assets/images/badges/byfusion-lucky.jpg
     dept: AI Short Drama Production
     position: AI Application Development Intern
     date: Apr. 2026 - Present
   - name: AiCoin
-    dept: LLM Applications & Information Services
-    position: AI Application Development Intern
-    date: Oct. 2025 - Apr. 2026
+    logo: /assets/images/badges/aicoin.png
+    dept: Cryptocurrency Quantitative Trading
+    position: Quantitative Development Intern
+    date: 2025 - 2026
 
 awards:
-  - name: Honorable Mention, ICM (2025) & MCM (2026)
+  - name: Honourable Mention, Mathematical Contest in Modeling
     date: 2025 & 2026
   - name: Third Prize (Guangdong), Contemporary Undergraduate Mathematical Contest in Modeling
     date: 2024
