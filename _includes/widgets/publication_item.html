@@ -3,7 +3,7 @@
     <div class="row no-gutters align-items-center publication-desktop-row {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         {% if item.cover %}
         <div class="col-md-4 mb-md-0 p-md-3 d-flex align-items-center justify-content-center publication-cover-column">
-            <a href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="View diagram for {{ item.title | escape }}"><img data-src="{{ item.cover | relative_url }}" alt="Pipeline for {{ item.title }}" class="lazy w-100 rounded-sm publication-cover" src="{{ '/assets/images/empty_300x200.png' | relative_url }}"></a>
+            <a href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="View diagram for {{ item.title | escape }}"><img src="{{ item.cover | relative_url }}" alt="Pipeline for {{ item.title }}" class="w-100 rounded-sm publication-cover" loading="lazy" decoding="async"></a>
         </div>
         {% endif %}
         <div class="{% if item.cover %}col-md-8 p-3 pl-md-0{% else %}col-12 p-3{% endif %}">
